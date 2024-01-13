@@ -41,14 +41,14 @@ const router = createBrowserRouter([
       {
         path:'/blogs/:id',
         element: <SingleBlog />,
-        loader: ({params})=> fetch(`http://localhost:5000/blogs/${params.id}`)
+        loader: ({params})=> fetch(`api/blogs/${params.id}`)
       }
     ]
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  
+    
     <RouterProvider router={router} />
- ,
+ 
 )
