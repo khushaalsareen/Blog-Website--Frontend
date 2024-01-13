@@ -14,12 +14,8 @@ const BlogPage = () => {
 
     useEffect(()=>{
         async function fetchBlogs(){
-            let url = `/api/blogs?page=${currentPage}&limit=${pageSize}`;
+            let url = '/api/blogs';
 
-            // filter by category
-            if(selectedCategory){
-                url +=`&category=${selectedCategory}`
-            }
             const response  = await fetch(url);
             const data = await response.json();
             console.log(data)
