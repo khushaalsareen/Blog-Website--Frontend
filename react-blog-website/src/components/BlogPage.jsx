@@ -4,6 +4,7 @@ import BlogCards from './BlogCards';
 import Pagination from './Pagination';
 import CategorySelection from './CategorySelection';
 import SideBar from './SideBar';
+import Shimmer from './Shimmer';
 
 const BlogPage = () => {
     const [blogs, setBlogs] = useState([]);
@@ -35,6 +36,9 @@ const BlogPage = () => {
     setCurrentPage(1);
     setActiveCategory(category)
     }
+
+    if(blogs.length===0) return <Shimmer />
+
   return (
     <div>
         {/* category section */}
