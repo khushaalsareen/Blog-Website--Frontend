@@ -14,7 +14,7 @@ const BlogPage = () => {
 
     useEffect(()=>{
         async function fetchBlogs(){
-            let url = '/api/blogs';
+            let url = 'https://blog-a8yi.onrender.com/api/blogs';
 
             const response  = await fetch(url);
             const data = await response.json();
