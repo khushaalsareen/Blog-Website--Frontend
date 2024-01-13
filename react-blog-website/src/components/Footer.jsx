@@ -87,7 +87,7 @@ const Footer = () => {
                 <div className='md:max-w-md lg:col-span-2 lg:mt-0 mt-5'>
                     <p className='font-medium tracking-wide text-gray-300'>Subscribe for updates</p>
                     <form className='mt-4 flex flex-col md:flex-row'>
-                        <input type="text" name="email" id="email" className='flex-grow w-full h-12 px-4 mb-3 transition duration-200 bg-white border-gray-300 rounded shadow-sm aspect-auto md:mr-2 md:mb-0 focus:border-purple-400 focus:outline-none' />
+                        <input type="text" name="emailID" id="emailID" className='flex-grow w-full h-12 px-4 mb-3 transition duration-200 bg-white border-gray-300 rounded shadow-sm aspect-auto md:mr-2 md:mb-0 focus:border-purple-400 focus:outline-none' />
                         <button type='submit' className='inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md hover:bg-orange-500 focus:outline-none border'>
                             Subscribe
                         </button>
